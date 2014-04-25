@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 /* MeyerWeb Reset */
 
@@ -27,7 +29,7 @@ time, mark, audio, video {
 
 body {
   padding:10px 50px 0 0;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
 	background-color: #FBFAF7;
@@ -47,7 +49,7 @@ p, ul, ol, table, dl {
 }
 
 h1, h2, h3 {
-	font-family: Arvo, Monaco, serif;
+	font-family: Dosis, Arvo, Monaco, serif;
 	line-height:1.3em;
 	font-weight: normal;
 }
@@ -71,7 +73,7 @@ h3 {
 }
 
 h4, h5, h6 {
-	font-family: Arvo, Monaco, serif;
+	font-family: Dosis, Arvo, Monaco, serif;
 	font-weight: 700;
 }
 
@@ -122,17 +124,16 @@ dl, dt, dd, dl p {
 }
 
 dl dt {
-  font-weight: bold;
+	font-family: Dosis, 'Arvo', Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
 dl dd {
   padding-left: 20px;
-  font-style: italic;
 }
 
 dl p {
   padding-left: 20px;
-  font-style: italic;
   margin-bottom: 0;
 }
 
@@ -190,12 +191,12 @@ table {
  }
 
 th {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+	font-family: Dosis, 'Arvo', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
-  padding: 10px;
-  background: #232323;
-  color: #FDFEFB;
+	padding: 10px;
+	background: #232323;
+	color: #FDFEFB;
  }
 
 td {
@@ -236,7 +237,7 @@ p.header {
 }
 
 h1.header {
-	font-family: Arvo, sans-serif;
+	font-family: Dosis, Arvo, sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 1.3em;
@@ -317,6 +318,17 @@ a.buttons:hover {
 p.small {
  font-size: 80%;
  line-height: 95%;
+}
+
+p.foot {
+	color: #aaa;
+ font-size: 80%;
+	font-style: italic;
+ line-height: 85%;
+ border-top: 1px solid #ccc;
+ padding-top: 5px;
+ margin-top: 7em;
+  text-align: right;
 }
 
 /* Section - for main page content */
