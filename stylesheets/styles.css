@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+@import url(http://weloveiconfonts.com/api/?family=iconicfill);
 
 /* MeyerWeb Reset */
 
@@ -96,7 +99,8 @@ a small {
 }
 
 em {
-	font-style: italic;
+  color:#C30000;
+  font-style: normal;
 }
 
 strong {
@@ -162,9 +166,20 @@ img.noborder {
 /* Code blocks */
 
 code, pre {
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	font-family: Arvo, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
-  font-size:14px;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+[class*="typicons-"]:before {
+  font-family: 'typicons', sans-serif;
+  padding-right:5px;
+}
+[class*="iconicfill-"]:before {
+  font-family: 'iconicfill', sans-serif;
 }
 
 pre {
@@ -174,7 +189,7 @@ pre {
   border:1px solid #D7D8C8;
   overflow: auto;
   overflow-y: hidden;
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 
@@ -217,7 +232,7 @@ header {
 	background-color: #171717;
 	color: #FDFDFB;
 	line-height: 1em;
-	width:170px;
+	width:190px;
 	float:left;
 	position:fixed;
 	border: 1px solid #000;
@@ -227,7 +242,7 @@ header {
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
+	padding: 34px 25px 22px 30px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
@@ -316,8 +331,8 @@ a.buttons:hover {
 }
 
 p.small {
- font-size: 80%;
- line-height: 95%;
+ font-size: 90%;
+ line-height: 99%;
 }
 
 p.foot {
@@ -329,6 +344,10 @@ p.foot {
  padding-top: 5px;
  margin-top: 7em;
   text-align: right;
+}
+
+p.foot a {
+	color: #aaa;
 }
 
 /* Section - for main page content */
