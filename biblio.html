@@ -29,6 +29,7 @@
 <h1>thematic bibliography</h1>
 <ul>
 <li><a href="#cp">models and algorithms in CP</a> (2010-)</li>
+<li><a href="#dc">flexible datacenter resource management with CP</a> (2009-)</li>
 <li><a href="#auto">automata and optimization constraints for rostering (NRP)</a> (2005-)</li>
 <li><a href="#rail">column generation for railway infrastructure capacity (SPP)</a> (2009-2012)</li>
 <li><a href="#rcpsp">ILP model decompositions with CP-based processing for project scheduling (RCPSP)</a> (2000-2008)</li>
@@ -49,17 +50,6 @@
 <span class="abs">We call Interval-Amongs a conjunction of among constraints on interval value domains. We prove that such a conjunction is in P (while the general case is NP-hard) using a new vertical "cardinality-based" decomposition made of a temporal constraint network and a flow network model. We derive from this a relaxed BC algorithm simple to implement as the conjunction of an all-shortest-paths filtering with a (flow-based) GCC. This is compared, both theoretically and empirically, to the standard horizontal "among-based" decomposition. Finally, we prove that Box-Amongs, i.e. the problem in higher dimensions, remains NP-hard.</span>
 </dd>
 
-<dt><a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011.pdf" name="cp11">CP 11</a></dt>
-<dd>
-<span class="author">Fabien Hermenier, Sophie Demassey, Xavier Lorca</span>
-<span class="year">2011</span>
-<span class="title"><a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011.pdf">Bin-Repacking Scheduling in Virtualized Datacenters</a></span>
-<span class="journal">Lecture Notes in Computer Science</span> (2011) 6876: 27-41.
-17th International Conference on Principles and Practice of Constraint Programming (<span class="conf">CP'11</span>), application track, 13-16 september 2011, Perugia, Italy.
- [<a href="http://dx.doi.org/10.1007/978-3-642-23786-7_5">doi</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp11-slides.pdf">slides</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">annex</a>]
-<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://choco.emn.fr/">Choco</a> in</span> <a href="http://entropy.gforge.inria.fr">Entropy</a>, <span class="abs">an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. The new computational results for the experiments of the paper are available in <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
-</dd>
-
 <dt><a href="http://hal.inria.fr/inria-00598712" name="RR11">RR 11</a></dt>
 <dd>
 <span class="author">Gilles Chabert, Frédéric Boyer, Sophie Demassey</span>
@@ -76,6 +66,29 @@ INRIA, Research Report 00598712.
 <span class="title"><a href="http://hal.archives-ouvertes.fr/hal-00485563">New filtering for the cumulative constraint in the context of non-overlapping rectangles</a></span>
 <span class="journal">Annals of Operations Research</span>(2011) 184 (1): 27-50. [<a href="http://dx.doi.org/10.1007/s10479-010-0731-0">doi</a>]
 <span class="abs">We formalize and study the complexity of the longest hole problem: it is to find the longest period during which tasks can be scheduled on a cumulative resource with a resource vacancy lower than a given slack value. A bounding algorithm for this problem and a filtering for the cumulative constraint based on this bound have been implemented in <a href="http://www.emn.fr/x-info/sdemasse/gccat/Cgeost.html">geost</a>.</span> 
+</dd>
+
+</dl>
+<h2 id="dc">flexible datacenter resource management with CP</h2><dl>
+
+<dt><a href="http://www.btrplace.org">BtrPlace website</a><dt>
+<dd>
+<span class="author">
+BtrPlace is an open source datacenter resource manager based on the Constraint Programming solver <a href="http://choco.emn.fr/">Choco</a>. It is mainly developed and maintained by <a href="https://sites.google.com/site/hermenierfabien/">Fabien Hermenier</a> at the University of Nice.</span>
+<span class="abs">The specificities of our approach of resource management are: (1) to dynamically compute not only the target configuration but also the schedule of the reconfiguration actions required to reach it, (2) to offer, thanks to CP, extensibility -- ease to implement new user requirements offline -- and configurability -- automatic integration of predefined user requirements online.
+ The sources are available on the <a href="http://www.btrplace.org">website</a> as well as the documentation, the research papers, and a sandbox to play with it.</span>
+<span class="abs">The latest public presentation was at PGMO-COPI 2014 <a href="art/demassey14pgmo.pdf">(slides oct 30, 2014)</a>.</span>
+
+
+<dt><a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011.pdf" name="cp11">CP 11</a></dt>
+<dd>
+<span class="author">Fabien Hermenier, Sophie Demassey, Xavier Lorca</span>
+<span class="year">2011</span>
+<span class="title"><a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011.pdf">Bin-Repacking Scheduling in Virtualized Datacenters</a></span>
+<span class="journal">Lecture Notes in Computer Science</span> (2011) 6876: 27-41.
+17th International Conference on Principles and Practice of Constraint Programming (<span class="conf">CP'11</span>), application track, 13-16 september 2011, Perugia, Italy.
+ [<a href="http://dx.doi.org/10.1007/978-3-642-23786-7_5">doi</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp11-slides.pdf">slides</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">annex</a>]
+<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://choco.emn.fr/">Choco</a> in</span> Entropy the former version of <a href="http://btrplace.org">BtrPlace</a>, <span class="abs">an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. Newer computational results for the experiments of the paper are available in <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
 </dd>
 
 </dl>
