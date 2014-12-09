@@ -71,14 +71,31 @@ INRIA, Research Report 00598712.
 </dl>
 <h2 id="dc">flexible datacenter resource management with CP</h2><dl>
 
-<dt><a href="http://www.btrplace.org">BtrPlace website</a><dt>
+<dt><a href="http://www.btrplace.org">BtrPlace</a><dt>
 <dd>
 <span class="author">
-BtrPlace is an open source datacenter resource manager based on the Constraint Programming solver <a href="http://choco.emn.fr/">Choco</a>. It is mainly developed and maintained by <a href="https://sites.google.com/site/hermenierfabien/">Fabien Hermenier</a> at the University of Nice.</span>
+BtrPlace is an open source datacenter resource manager based on the Constraint Programming solver <a href="http://choco.emn.fr/">Choco</a>. It is mainly developed by <a href="https://sites.google.com/site/hermenierfabien/">Fabien Hermenier</a> at University of Nice</span>
 <span class="abs">The specificities of our approach of resource management are: (1) to dynamically compute not only the target configuration but also the schedule of the reconfiguration actions required to reach it, (2) to offer, thanks to CP, extensibility -- ease to implement new user requirements offline -- and configurability -- automatic integration of predefined user requirements online.
  The sources are available on the <a href="http://www.btrplace.org">website</a> as well as the documentation, the research papers, and a sandbox to play with it.</span>
-<span class="abs">The latest public presentation was at PGMO-COPI 2014 <a href="art/demassey14pgmo.pdf">(slides oct 30, 2014)</a>.</span>
+</dd>
 
+<dt><a>Packing 15</a></dt>
+<dd>
+<span class="author">Sophie Demassey, Fabien Hermenier, Vincent Kherbache</span>
+<span class="year">2015</span>
+<span class="title"><a>Dynamic Packing with Side Constraints for Datacenter Resource Management</a></span>
+<span class="journal">in G. Fasano and J.D. Pintér. eds, Optimized Packings and Their Applications, Springer, New York. (to appear)</span>
+<span class="abs">This chapter describes the variant of the vector packing problem considered in <a href="http://www.btrplace.org">BtrPlace</a> in the context of datacenter resource management, giving an insight into its dynamic and heterogeneous nature.</span>
+</dd>
+
+<dt><a href="art/demassey14pgmo.pdf">PGMO-COPI 14</a></dt>
+<dd>
+<span class="author">Sophie Demassey, Fabien Hermenier</span>
+<span class="year">2014</span>
+<span class="title"><a href="art/demassey14pgmo.pdf">BtrPlace: Flexible VM Management in Data Centers</a></span>
+<span class="journal">Conference on Optimization & Practices in Industry (PGMO-COPI'14), 28-31 october 2014, Paris-Saclay, France. 4p.</span>
+<span class="abs">Presentation of the last results todate of BtrPlace.</span>
+</dd>
 
 <dt><a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011.pdf" name="cp11">CP 11</a></dt>
 <dd>
@@ -88,13 +105,21 @@ BtrPlace is an open source datacenter resource manager based on the Constraint P
 <span class="journal">Lecture Notes in Computer Science</span> (2011) 6876: 27-41.
 17th International Conference on Principles and Practice of Constraint Programming (<span class="conf">CP'11</span>), application track, 13-16 september 2011, Perugia, Italy.
  [<a href="http://dx.doi.org/10.1007/978-3-642-23786-7_5">doi</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp11-slides.pdf">slides</a>, <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">annex</a>]
-<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://choco.emn.fr/">Choco</a> in</span> Entropy the former version of <a href="http://btrplace.org">BtrPlace</a>, <span class="abs">an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. Newer computational results for the experiments of the paper are available in <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
+<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://choco.emn.fr/">Choco</a> in Entropy the former version of <a href="http://btrplace.org">BtrPlace</a>, an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. Newer computational results for the experiments of the paper are available in <a href="https://sites.google.com/site/hermenierfabien/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
 </dd>
 
 </dl>
 <h2 id="auto">automata and optimization constraints for rostering</h2><dl>
 
-  <dt><a href="http://tel.archives-ouvertes.fr/tel-00785838" name="phd11">Julien's PhD</a></dt>
+<dt><a href="art/demassey14cmp.pdf" name="CMP14">seminar CMP 14</a></dt>
+<dd>
+<span class="author">Sophie Demassey</span>
+<span class="year">2014</span>
+<span class="title"><a href="art/demassey14cmp.pdf">Flexible Optimization: Nurse Scheduling with Constraint Programming and Automata</a></span>
+Invited Seminar at CMP, École des Mines de Saint-Étienne, 3 july 2014.
+</dd>
+
+<dt><a href="http://tel.archives-ouvertes.fr/tel-00785838" name="phd11">Julien's PhD</a></dt>
 <dd>
 <span class="author">Julien Menana</span>
 <span class="year">2011</span>
@@ -472,7 +497,7 @@ MSc Thesis (Mémoire de DEA) in Pure Mathematics - Commutative Algebra, Universi
 
 </dl>
 
-<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: october 2013</p>
+<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: december 2014</p>
 </section>
 </div>
 </body>
