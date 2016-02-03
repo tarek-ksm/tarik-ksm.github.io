@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta http-equiv="Window-target" content="_parent">
+<title>Lower Bounds for the RCPSP</title>
+<link rel="stylesheet" href="results.css" type="text/css"></head>
+
+<body>
+<h2>Lower Bounds for the RCPSP: Computational results</h2>
+<center><a href="http://www.lix.polytechnique.fr/~baptiste/">Philippe Baptiste</a> and <a href="../index.html">Sophie Demassey</a></td></tr></center>
+<br><br>
+<p>This page provides detailed computational results for various benchmark instances of the resource-constrained project scheduling problem:
+<ul><li>the standard <a href="http://www.bwl.uni-kiel.de/Prod/psplib/">PSPLIB</a> benchmark instances [<a href="#KSD">4</a>] with 30 and 60 activities, and
+<li>the Baptiste-Le&nbsp;Pape highly cumulative instances [<a href="#BLP">2</a>] with 20 and 25 activities.</ul>
+<p>Three lower bounds LB-BK, LB-BK-E, and LB-BK-E-PREC [<a href="#BD">1</a>] are reported. They are all based on the linear programming and constraint programming-based bound of Brucker and Knust [<a href="#BK">3</a>], improving it by:
+<ol><li>using more intensive constraint programming techniques as preprocessing
+<li>(for LB-BK-E and LB-BK-E-PREC) introducing several energetic reasoning-based cutting-planes to solve the linear program.</ol>
+<br>
+<table class="delim" align="center">
+  <tr><td><a href="bd_ksd60.txt">bd_ksd60.txt</a></td><td>&nbsp;</td><td>lower bounds for the PSPLIB benchmark instances with 60 activities</td></tr>
+  <tr><td><a href="bd_ksd30.txt">bd_ksd30.txt</a></td><td>&nbsp;</td><td>lower bounds for the PSPLIB benchmark instances with 30 activities</td></tr>
+  <tr><td><a href="bd_bl.txt">bd_bl.txt</a></td><td>&nbsp;</td><td>lower bounds for the Baptiste-Le Pape benchmark instances</td></tr>
+</table>
+<br><br>
+<hr>
+<p>[<a name="BD">1</a>] Philippe Baptiste and Sophie Demassey (2004) Tight LP Bounds for the Resource Constrained Project Scheduling, OR Spectrum 26: 251-262.
+<p>[<a name="BLP">2</a>] Philippe Baptiste and Claude Le Pape (2000) Constraint propagation and decomposition techniques for highly disjunctive and highly cumulative project scheduling problems, Constraints 5 (1-2): 119-139.
+<p>[<a name="BK">3</a>] Peter Brucker and Sigrid Knust (2000) A linear programming and constraint propagation-based lower bound for the RCPSP, European Journal of Operational Research 127: 355-362.
+<p>[<a name="KSD">4</a>] Rainer Kolisch, Christoph Schwindt, and Arno Sprecher (1998) Benchmark Instances for Project Scheduling Problems, in J. Weglarz (ed.), Handbook on Recent Advances in Project Scheduling, Kluwer, 197-212.
+</body></html>

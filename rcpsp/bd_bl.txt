@@ -1,0 +1,56 @@
+		RM		BB		   LB-BK	  LB-BK-E	LB-BK-E-PREC	
+Instance	cpu	LB	UB	cpu	lbBK	cpu	lbBK	cpu	lbBK	cpu
+---------------------------------------------------------------------------------------------
+BL_20_01	0	16	16	0,63						
+BL_20_02	0	16	16	3,25						
+BL_20_03	0	15	15	5,95						
+BL_20_04	0	18	18	0,11						
+BL_20_05	0	17	19	90,01	17	0,29	17	0,15	17	0,22
+BL_20_06	0	16	16	2,02						
+BL_20_07	0	19	19	17,05						
+BL_20_08	0	20	20	4,51						
+BL_20_09	0	14	14	2,52						
+BL_20_10	0	16	16	1,86						
+BL_20_11	0	17	17	0,02						
+BL_20_12	0	18	18	7,57						
+BL_20_13	0	17	17	0,91						
+BL_20_14	0	17	18	90,01	17	0,11	17	0,11	17	0,17
+BL_20_15	0	13	13	1,05						
+BL_20_16	0	19	19	2,31						
+BL_20_17	0	14	15	90,01	14	0,1	14	0,14	14	0,18
+BL_20_18	0,1	17	18	90,01	17	0,1	17	0,12	17	0,17
+BL_20_19	0	14	14	0,30						
+BL_20_20	0	15	15	2,79						
+BL_25_01	0	27	27	19,02						
+BL_25_02	0	29	29	15,28						
+BL_25_03	0	23	23	2,59						
+BL_25_04	0	22	22	0,06						
+BL_25_05	0	28	28	2,40						
+BL_25_06	0,1	33	33	0,30						
+BL_25_07	0	24	28	90,01	24	0,381	24	0,26	24	0,29
+BL_25_08	0	24	24	0,70						
+BL_25_09	0	27	27	1,52						
+BL_25_10	0	23	23	0,23						
+BL_25_11	0,1	24	24	26,62						
+BL_25_12	0	29	30	90,02	29	0,19	29	0,33	29	0,41
+BL_25_13	0	17	17	0,18						
+BL_25_14	0	30	30	0,27						
+BL_25_15	0	20	20	1,27						
+BL_25_16	0,1	20	20	0,14						
+BL_25_17	0	26	26	0,55						
+BL_25_18	0	23	23	7,98						
+BL_25_19	0	23	23	1,34						
+BL_25_20	0	27	28	90,01	27	0,11	27	0,15	27	0,2
+										
+-----------------------------------------------------------------------------------------------------------------------------------
+cpu RM:		cpu time (in seconds) to generate redundant machines (MIP solved by Cplex) 								
+LB BB:		lower bound computed by the initial branch and bound								
+UB BB:		upper bound computed by the initial branch and bound								
+cpu BB:		cpu time (in seconds) to run the initial branch and bound (time-limit of 90 seconds, CP solved using Scheduler)								
+If the branch and bound has not prove optimality:										
+LB-BK:		lower bound computed by the column generation of Brucker and Knust
+cpu LB-BK:		additional cpu time (in seconds) to run the column generation								
+LB-BK-E:		LB-BK + energetic cuts								
+cpu LB-BK-E:		additional cpu time (in seconds) to run LB-BK-E								
+LB-BK-E-PREC:		LB-BK-E + precedence cuts								
+cpu LB-BK-E-PREC:		additional cpu time (in seconds) to run LB-BK-E-PREC								
