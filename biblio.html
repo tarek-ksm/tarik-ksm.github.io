@@ -28,10 +28,11 @@
 <section>
 <h1>thematic bibliography</h1>
 <ul>
+<li><a href="#dr">scheduling for load management</a> (2015-)</li>
 <li><a href="#water">MINLP for water distribution systems</a> (2014-)</li>
 <li><a href="#cp">models and algorithms in CP</a> (2010-)</li>
 <li><a href="#dc">flexible datacenter resource management with CP</a> (2009-)</li>
-<li><a href="#auto">automata and optimization constraints for rostering (NRP)</a> (2005-)</li>
+<li><a href="#auto">automata and optimization constraints for rostering (NRP)</a> (2005-2012)</li>
 <li><a href="#rail">column generation for railway infrastructure capacity (SPP)</a> (2009-2012)</li>
 <li><a href="#rcpsp">ILP model decompositions with CP-based processing for project scheduling (RCPSP)</a> (2000-2008)</li>
 <li><a href="#gccat">systematic reformulation of global constraints</a> (2006-2007)</li>
@@ -39,22 +40,78 @@
 <li><a href="#comma">commutative algebra</a> (1997-1998)</dd>
 </ul>
 
+<h2 id="dr">scheduling for load management</h2><dl>
+
+  <dt><a name="europar17">EuroPar 17</a></dt>
+<dd>
+<span class="author">Fabien Hermenier, Giovanni Giuliani, Andrea Milani, Sophie Demassey</span>
+<span class="year">2017</span>
+<span class="title">Scaling Energy Adaptive Applications for Sustainable Profitability</a></span>
+<span class="journal">Euro-Par 2017 Parallel Processing: 23rd International Conference, Santiago de Compostella, Spain.</span>
+<span class="abs">Carver is a CP-based solution developed in the context of the european project DC4Cities to orchestrate energy-adaptive applications in datacenters, according to performance and environmental preferences, given forecasts of the renewable energy production.</span>
+</dd>
+
+  <dt><a name="euro16b">EURO 16b</a></dt>
+<dd>
+<span class="author">Aurélien Havel, Sophie Demassey</span>
+<span class="year">2016</span>
+<span class="title">Robust optimisation for a smart grid</span>
+28th European Conference on Operational Research (<span class="conf">EURO'16</span>), 3-6 july 2016, Poznan.
+<span class="abs">We extended the bilevel math programming model by P.-L. Poirion (PhD Thesis 2015) for the robust design of a microgrid connected to the public grid by implementing distributed load shedding and network service options.</span>
+</dd>
+
 <h2 id="water">MINLP for water distribution systems</h2><dl>
 
 <dt><a href="art/bonvin16ae.pdf" name="ae16">AE 16</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey, Claude Le Pape, Nadia Maïzi, Vincent Mazauric, Alfredo Sampiero</span>
-<span class="year">2016</span>
+<span class="year">2017</span>
 <span class="title"><a href="art/bonvin16ae.pdf">A convex mathematical program for pump scheduling in a class of branched drinking water networks</a></span>
-<span class="journal">Applied Energy</span> (accepted).
-<span class="abs">We focus on a specific, still widespread, class of water networks: the typical branched drinking water networks in rural zones with one pumping station and disseminated water towers. We show that, in this context, the mixed integer non-linear formulation of the day-ahead pump scheduling problem can be made convex, thus more tractable. We provide a deep experimental study on a real use-case.</span>
+<span class="journal">Applied Energy</span> vol. 185, 1702-1711.
+<span class="abs">We focus on a specific, still widespread, class of water networks: the typical branched drinking water networks in rural zones with one pumping station and disseminated water towers. We show that, in this context, the mixed integer non-linear formulation of the day-ahead pump scheduling problem can be made quadratic convex by relaxing the flow-head coupling equalities into inequalities. We provide a deep experimental study on a real use-case showing that this tractable model can be solved when the original non-convex model cannot.</span>
 </dd>
 
-<dt><a href="https://www.euro-online.org/conf/euro27/treat_abstract?paperid=2743" name="euro15">EURO 15</a></dt>
+<dt><a name="roadef17b">ROADEF 17b</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey</span>
+<span class="year">2017</span>
+<span class="title">Dimensionnement des réseaux gravitaires de distribution d’eau potable par relaxation convexe et décomposition spatiale</span>
+18ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'17</span>), february 2017, Metz, France.
+<span class="abs">We present our first ideas to tackle the problem of water network design when active elements such as pumps and valves are present.</span>
+</dd>
+
+<dt><a name="roadef17a">ROADEF 17a</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey</span>
+<span class="year">2017</span>
+<span class="title">Relaxation convexe pour la planification de pompage dans les réseaux de distribution d’eau potable</span>
+18ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'17</span>), february 2017, Metz, France.
+<span class="abs">Generalization of the convex relaxation-based approach presented in <a href="#ae16">AE16</a> to non-branched and non-directed networks. In the general settings, the relaxed solutions may not be feasible anymore but the objective function makes them close to be feasible. We present a heuristic based on a slight adjustment of the time step durations to recover their feasibility.</span>
+</dd>
+
+<dt><a name="euro16a">EURO 16a</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey</span>
+<span class="year">2016</span>
+<span class="title">Convex Relaxation for Water Distribution Networks</span>
+28th European Conference on Operational Research (<span class="conf">EURO'16</span>), 3-6 july 2016, Poznan.
+<span class="abs">Generalization of the convex relaxation-based approach presented in <a href="#ae16">AE16</a> to non-branched and non-directed networks. In the general settings, the relaxed solutions may not be feasible anymore but the objective function makes them close to be feasible and workable in practice.</span>
+</dd>
+
+<dt><a name="roadef16">ROADEF 16</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey</span>
+<span class="year">2016</span>
+<span class="title">Relaxation convexe pour la planification du pompage dans un réseau branché de distribution d'eau</span>
+17ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'16</span>), february 2016, Compiègne, France.
+<span class="abs">Presentation of (<a href="#ae16">AE16</a>) above.</span>
+</dd>
+
+<dt><a name="euro15">EURO 15</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey</span>
 <span class="year">2015</span>
-<span class="title"><a href="https://www.euro-online.org/conf/euro27/treat_abstract?paperid=2743">Energy efficiency in water supply systems : variable speed drives vs pumping scheduling</a></span>
+<span class="title">Energy efficiency in water supply systems : variable speed drives vs pumping scheduling</span>
 27th European Conference on Operational Research (<span class="conf">EURO'15</span>), 12-15 july 2015, Glasgow.
 <span class="abs">Where we compare the opportunities of installing variable speed drives vs. optimizing the pump schedule in a drinking water pumping station.</span>
 </dd>
@@ -538,7 +595,7 @@ MSc Thesis (Mémoire de DEA) in Pure Mathematics - Commutative Algebra, Universi
 
 </dl>
 
-<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: january 2016</p>
+<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: may 2017</p>
 </section>
 </div>
 </body>
