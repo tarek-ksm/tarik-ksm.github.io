@@ -178,18 +178,24 @@ code, pre {
   font-family: 'typicons', sans-serif;
   padding-right:5px;
 }
+
 [class*="iconicfill-"]:before {
   font-family: 'iconicfill', sans-serif;
 }
 
 pre {
-	padding: 4px 12px;
+  padding: 4px 12px;
   background: #FDFEFB;
   border-radius:4px;
   border:1px solid #D7D8C8;
   overflow: auto;
   overflow-y: hidden;
   margin-bottom: 32px;
+}
+
+div.new {
+    background: #e0ebeb;
+
 }
 
 

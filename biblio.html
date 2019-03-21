@@ -42,6 +42,31 @@
 
 <h2 id="dr">scheduling for load management</h2><dl>
 
+<dt><a name="ismp18a">ISMP 18a</a></dt>
+<dd>
+  <span class="author">Sophie Demassey, Edi Assoumou, Welington De Oliveira</span>
+  <span class="title">Robust optimisation of storage in a power generation expansion planning problem</span>
+  23rd International Symposium on Mathematical Programming (<span class="conf">ISMP'18</span>), Bordeaux, France.
+  <span class="abs">Coupling a long-term power generation expansion planning model with a mid-term storage optimization model to handle uncertainties in renewable production.</span>
+  Also presented at <span class="conf">PGMO days 18</span>.
+</dd>
+  
+<dt><a name="ismp18b">ISMP 18b</a></dt>
+<dd>
+  <span class="author">Paul Javal, Welington de Oliveira, Hugo Morais, Wim van Ackooij, Sophie Demassey</span>
+  <span class="title">Modelling distributed energy resources uncertainties in short-term operational planning optimisation</span>
+  23rd International Symposium on Mathematical Programming (<span class="conf">ISMP'18</span>), Bordeaux, France.
+  <span class="abs">Identifying the new levers to operate when controlling the power distribution network.</span>
+</dd>
+
+<dt><a name="roadef18">ROADEF 18</a></dt>
+<dd>
+  <span class="author">Arnold N'Goran, Sophie Demassey, Sébastien Thiry</span>
+  <span class="title">Pilotage d'un système hybride d'énergie renouvelable : programme mathématique et algorithme génétique comparés</span>
+  19ème congrès de la Société Française de Recherche Opérationnelle et d’Aide à la Décision (<span class="conf">ROADEF'18</span>), Lorient, France.
+  <span class="abs">First results comparing a math. prog. approach and a simulation-based genetic algorithm to operate a on-grid hybrid system.</span>
+</dd>
+
   <dt><a href="https://fhermeni.github.io/pubs/hermenier-europar17.pdf">EuroPar 17</a></dt>
 <dd>
 <span class="author">Fabien Hermenier, Giovanni Giuliani, Andrea Milani, Sophie Demassey</span>
@@ -63,6 +88,26 @@
 
 <h2 id="water">MINLP for water distribution systems</h2><dl>
 
+<dt><a href="art/bonvin19wcgo.pdf" name="wcgo19">WCGO 19</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey, Welington de Oliveira</span>
+<span class="year">2019</span>
+<span class="title"><a href="art/bonvin19wcgo.pdf">Robust design of pumping stations in water distribution networks</a></span>
+6th World Congress on Global Optimization (<span class="conf">WCGO'19</span>), 8-10 july 2019, Metz.
+<span class="abs">We embed the scheduling model of <a href="ae16">AE 16</a> in a stabilized Benders decomposition approach applied to the problem of sizing the pumps in a water distribution network at minimum investment+operation costs. To reduce the complexity of the operational subproblem, we first decompose the scheduling horizon in representative days. We then relax the discrete and non-convex components of the hydraulic model. The resulting QCP relaxation quickly computes accurate enough estimates of the operation costs and allows to derive optimality cuts. We also enforce the robustness of the sizing by evaluating its feasibility on stress-day scenarios (with peak demand and a pump break). We show how to simplify the MIQCP scheduling model when the objective function is ignored and exhibit a dominance argument to derive logic feasibility cuts.</span>
+Preliminary results presented at <span class="conf">ROADEF 17</span>.
+</dd>
+
+<dt><a name="ismp18c">ISMP 18c</a></dt>
+<dd>
+  <span class="author">Gratien Bonvin, Sophie Demassey, Andrea Lodi</span>
+    <span class="year">2019</span>
+    <span class="title">Global optimization for the pump scheduling problem in drinking water networks</span>
+    23rd International Symposium on Mathematical Programming (<span class="conf">ISMP'18</span>), Bordeaux, France.
+    <span class="abs">The generalization of <a href="ae16">AE 16</a> to non-branched networks with variable speed pumps. Tackling the non-convex MINLP model with an instantiation of branch-and-check, based on a tight convex relaxation and coupled with a time step adjustement-based primal heuristic. Experimented on 5 different benchmarks of the literature.</span>
+    Also presented a <span class="conf">ROADEF 19</span>; preliminary results at <span class="conf">EURO 16</span> (convex relaxation), <span class="conf">ROADEF 17</span> (time step duration adjustment heuristic) and <span class="conf">IFORS 17</span>.
+</dd>
+
 <dt><a href="art/bonvin16ae.pdf" name="ae16">AE 16</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey, Claude Le Pape, Nadia Maïzi, Vincent Mazauric, Alfredo Sampiero</span>
@@ -70,42 +115,7 @@
 <span class="title"><a href="art/bonvin16ae.pdf">A convex mathematical program for pump scheduling in a class of branched drinking water networks</a></span>
 <span class="journal">Applied Energy</span> vol. 185, 1702-1711.
 <span class="abs">We focus on a specific, still widespread, class of water networks: the typical branched drinking water networks in rural zones with one pumping station and disseminated water towers. We show that, in this context, the mixed integer non-linear formulation of the day-ahead pump scheduling problem can be made quadratic convex by relaxing the flow-head coupling equalities into inequalities. We provide a deep experimental study on a real use-case showing that this tractable model can be solved when the original non-convex model cannot.</span>
-</dd>
-
-<dt><a name="roadef17b">ROADEF 17b</a></dt>
-<dd>
-<span class="author">Gratien Bonvin, Sophie Demassey</span>
-<span class="year">2017</span>
-<span class="title">Dimensionnement des réseaux gravitaires de distribution d’eau potable par relaxation convexe et décomposition spatiale</span>
-18ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'17</span>), february 2017, Metz, France.
-<span class="abs">We present our first ideas to tackle the problem of water network design when active elements such as pumps and valves are present.</span>
-</dd>
-
-<dt><a name="roadef17a">ROADEF 17a</a></dt>
-<dd>
-<span class="author">Gratien Bonvin, Sophie Demassey</span>
-<span class="year">2017</span>
-<span class="title">Relaxation convexe pour la planification de pompage dans les réseaux de distribution d’eau potable</span>
-18ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'17</span>), february 2017, Metz, France.
-<span class="abs">Generalization of the convex relaxation-based approach presented in <a href="#ae16">AE16</a> to non-branched and non-directed networks. In the general settings, the relaxed solutions may not be feasible anymore but the objective function makes them close to be feasible. We present a heuristic based on a slight adjustment of the time step durations to recover their feasibility.</span>
-</dd>
-
-<dt><a name="euro16a">EURO 16a</a></dt>
-<dd>
-<span class="author">Gratien Bonvin, Sophie Demassey</span>
-<span class="year">2016</span>
-<span class="title">Convex Relaxation for Water Distribution Networks</span>
-28th European Conference on Operational Research (<span class="conf">EURO'16</span>), 3-6 july 2016, Poznan.
-<span class="abs">Generalization of the convex relaxation-based approach presented in <a href="#ae16">AE16</a> to non-branched and non-directed networks. In the general settings, the relaxed solutions may not be feasible anymore but the objective function makes them close to be feasible and workable in practice.</span>
-</dd>
-
-<dt><a name="roadef16">ROADEF 16</a></dt>
-<dd>
-<span class="author">Gratien Bonvin, Sophie Demassey</span>
-<span class="year">2016</span>
-<span class="title">Relaxation convexe pour la planification du pompage dans un réseau branché de distribution d'eau</span>
-17ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'16</span>), february 2016, Compiègne, France.
-<span class="abs">Presentation of (<a href="#ae16">AE16</a>) above.</span>
+Presented at <span class="conf">ROADEF 16</span>.
 </dd>
 
 <dt><a name="euro15">EURO 15</a></dt>
@@ -604,7 +614,7 @@ MSc Thesis (Mémoire de DEA) in Pure Mathematics - Commutative Algebra, Universi
 
 </dl>
 
-<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: july 2017</p>
+<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: march 2019</p>
 </section>
 </div>
 </body>
