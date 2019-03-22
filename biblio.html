@@ -28,7 +28,7 @@
 <section>
 <h1>thematic bibliography</h1>
 <ul>
-<li><a href="#dr">scheduling for load management</a> (2015-)</li>
+<li><a href="#dr">scheduling and planning in power systems</a> (2015-)</li>
 <li><a href="#water">MINLP for water distribution systems</a> (2014-)</li>
 <li><a href="#cp">models and algorithms in CP</a> (2010-)</li>
 <li><a href="#dc">flexible datacenter resource management with CP</a> (2009-)</li>
@@ -40,7 +40,7 @@
 <li><a href="#comma">commutative algebra</a> (1997-1998)</dd>
 </ul>
 
-<h2 id="dr">scheduling for load management</h2><dl>
+<h2 id="dr">scheduling and planning in power systems</h2><dl>
 
 <dt><a name="ismp18a">ISMP 18a</a></dt>
 <dd>
@@ -95,7 +95,7 @@
 <span class="title"><a href="art/bonvin19wcgo.pdf">Robust design of pumping stations in water distribution networks</a></span>
 6th World Congress on Global Optimization (<span class="conf">WCGO'19</span>), 8-10 july 2019, Metz.
 <span class="abs">We embed the scheduling model of <a href="ae16">AE 16</a> in a stabilized Benders decomposition approach applied to the problem of sizing the pumps in a water distribution network at minimum investment+operation costs. To reduce the complexity of the operational subproblem, we first decompose the scheduling horizon in representative days. We then relax the discrete and non-convex components of the hydraulic model. The resulting QCP relaxation quickly computes accurate enough estimates of the operation costs and allows to derive optimality cuts. We also enforce the robustness of the sizing by evaluating its feasibility on stress-day scenarios (with peak demand and a pump break). We show how to simplify the MIQCP scheduling model when the objective function is ignored and exhibit a dominance argument to derive logic feasibility cuts.</span>
-Preliminary results presented at <span class="conf">ROADEF 17</span>.
+Preliminary results presented at <span class="conf">ROADEF'17</span>.
 </dd>
 
 <dt><a name="ismp18c">ISMP 18c</a></dt>
@@ -105,7 +105,7 @@ Preliminary results presented at <span class="conf">ROADEF 17</span>.
     <span class="title">Global optimization for the pump scheduling problem in drinking water networks</span>
     23rd International Symposium on Mathematical Programming (<span class="conf">ISMP'18</span>), Bordeaux, France.
     <span class="abs">The generalization of <a href="ae16">AE 16</a> to non-branched networks with variable speed pumps. Tackling the non-convex MINLP model with an instantiation of branch-and-check, based on a tight convex relaxation and coupled with a time step adjustement-based primal heuristic. Experimented on 5 different benchmarks of the literature.</span>
-    Also presented a <span class="conf">ROADEF 19</span>; preliminary results at <span class="conf">EURO 16</span> (convex relaxation), <span class="conf">ROADEF 17</span> (time step duration adjustment heuristic) and <span class="conf">IFORS 17</span>.
+    Also presented a <span class="conf">ROADEF'19</span>; preliminary results at <span class="conf">EURO'16</span> (convex relaxation), <span class="conf">ROADEF'17</span> (time step duration adjustment heuristic) and <span class="conf">IFORS'17</span>.
 </dd>
 
 <dt><a href="art/bonvin16ae.pdf" name="ae16">AE 16</a></dt>
@@ -115,7 +115,7 @@ Preliminary results presented at <span class="conf">ROADEF 17</span>.
 <span class="title"><a href="art/bonvin16ae.pdf">A convex mathematical program for pump scheduling in a class of branched drinking water networks</a></span>
 <span class="journal">Applied Energy</span> vol. 185, 1702-1711.
 <span class="abs">We focus on a specific, still widespread, class of water networks: the typical branched drinking water networks in rural zones with one pumping station and disseminated water towers. We show that, in this context, the mixed integer non-linear formulation of the day-ahead pump scheduling problem can be made quadratic convex by relaxing the flow-head coupling equalities into inequalities. We provide a deep experimental study on a real use-case showing that this tractable model can be solved when the original non-convex model cannot.</span>
-Presented at <span class="conf">ROADEF 16</span>.
+Presented at <span class="conf">ROADEF'16</span>.
 </dd>
 
 <dt><a name="euro15">EURO 15</a></dt>
@@ -173,7 +173,7 @@ Presented at <span class="conf">ROADEF 16</span>.
 <span class="year">2011</span>
 <span class="title"><a href="http://hal.inria.fr/inria-00598712">Multi-Agent Electro-Location and the Among Constraint</a></span>
 INRIA, Research Report 00598712.
-<span class="abs">The application-oriented variant of paper (<a href="#cpaior12">cpaior12</a>) above. Gilles has exhibited the Interval-Amongs constraint in the problem of localization of robots equipped with the electric sense. This occurs in the context of the reconfigurable anguilliform swimming robot imagined by Frédéric.</span>
+<span class="abs">The application-oriented variant of paper (<a href="#cpaior12">CPAIOR 12</a>) above. Gilles has exhibited the Interval-Amongs constraint in the problem of localization of robots equipped with the electric sense. This occurs in the context of the reconfigurable anguilliform swimming robot imagined by Frédéric.</span>
 </dd>
 
 <dt><a href="http://hal.archives-ouvertes.fr/hal-00485563" name="aor10">AOR 10</a></dt>
@@ -182,7 +182,7 @@ INRIA, Research Report 00598712.
 <span class="year">2010</span>
 <span class="title"><a href="http://hal.archives-ouvertes.fr/hal-00485563">New filtering for the cumulative constraint in the context of non-overlapping rectangles</a></span>
 <span class="journal">Annals of Operations Research</span>(2011) 184 (1): 27-50. [<a href="http://dx.doi.org/10.1007/s10479-010-0731-0">doi</a>]
-<span class="abs">We formalize and study the complexity of the longest hole problem: it is to find the longest period during which tasks can be scheduled on a cumulative resource with a resource vacancy lower than a given slack value. A bounding algorithm for this problem and a filtering for the cumulative constraint based on this bound have been implemented in <a href="http://www.emn.fr/x-info/sdemasse/gccat/Cgeost.html">geost</a>.</span> 
+<span class="abs">We formalize and study the complexity of the longest hole problem: it is to find the longest period during which tasks can be scheduled on a cumulative resource with a resource vacancy lower than a given slack value. A bounding algorithm for this problem and a filtering for the cumulative constraint based on this bound have been implemented in <a href="gccat/gccat/Cgeost.html">geost</a>.</span> 
 </dd>
 
 </dl>
@@ -191,7 +191,7 @@ INRIA, Research Report 00598712.
 <dt><a href="http://www.btrplace.org">BtrPlace</a><dt>
 <dd>
 <span class="author">
-BtrPlace is an open source datacenter resource manager based on the Constraint Programming solver <a href="http://choco.emn.fr/">Choco</a>. It is mainly developed by <a href="https://fhermeni.github.io/">Fabien Hermenier</a> at University of Nice</span>
+BtrPlace is an open source datacenter resource manager based on the Constraint Programming solver <a href="http://www.choco-solver.org/">Choco</a>. It is mainly developed by <a href="https://fhermeni.github.io/">Fabien Hermenier</a> at University of Nice</span>
 <span class="abs">The specificities of our approach of resource management are: (1) to dynamically compute not only the target configuration but also the schedule of the reconfiguration actions required to reach it, (2) to offer, thanks to CP, extensibility -- ease to implement new user requirements offline -- and configurability -- automatic integration of predefined user requirements online.
  The sources are available on the <a href="http://www.btrplace.org">website</a> as well as the documentation, the research papers, and a sandbox to play with it.</span>
 </dd>
@@ -222,7 +222,7 @@ BtrPlace is an open source datacenter resource manager based on the Constraint P
 <span class="journal">Lecture Notes in Computer Science</span> (2011) 6876: 27-41.
 17th International Conference on Principles and Practice of Constraint Programming (<span class="conf">CP'11</span>), application track, 13-16 september 2011, Perugia, Italy.
  [<a href="http://dx.doi.org/10.1007/978-3-642-23786-7_5">doi</a>, <a href="https://fhermeni.github.io/pubs/hermenier-etal-cp2011-slides.pdf">slides</a>, <a href="https://fhermeni.github.io/pubs/hermenier-etal-cp2011-update.pdf">annex</a>]
-<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://choco.emn.fr/">Choco</a> in Entropy the former version of <a href="http://btrplace.org">BtrPlace</a>, an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. Newer computational results for the experiments of the paper are available in <a href="https://fhermeni.github.io/pubs/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
+<span class="abs">Take an in-fashion domain (cloud !), a combined packing and scheduling problem (where and when to migrate ?), a singular scheduling property (concurrent resource requirements during live migration), and various side placement constraints, and say: CP is fun. We present the CP model and search heuristic implemented with <a href="http://www.choco-solver.org/">Choco</a> in Entropy the former version of <a href="http://btrplace.org">BtrPlace</a>, an autonomous VM manager conceived and developed by Fabien. Since the submission, we have greatly improved our implementation. Newer computational results for the experiments of the paper are available in <a href="https://fhermeni.github.io/pubs/hermenier-etal-cp2011-update.pdf">this annex report (sep 26, 2011)</a>.</span>    
 </dd>
 
 </dl>
@@ -250,7 +250,7 @@ PhD Thesis in Computer Science, University of Nantes, 28 october 2011.
 <span class="year">2010</span>
 <span class="title"><a href="art/menana10patat.pdf">Weighted Automata, Constraint Programming, and Large Neighborhood Search</a></span>
 Nurse Rostering Competition at the 8th International Conference for the Practice and Theory of Automated Timetabling (<span class="conf">PATAT'10</span>), 10-13 august 2010, Belfast, Ireland.
-<span class="abs">We propose an automated planner, implemented with <a href="http://choco.emn.fr/">Choco</a>, answering to the specifications of the NRP competition. The parser builds and compounds a multi-weighted automaton from a given set of soft scheduling rules, and then a CP model based on one Multicost-Regular per nurse and one Global Cardinality per period. The model is optimized heuristically through LNS.</span>
+<span class="abs">We propose an automated planner, implemented with <a href="http://www.choco-solver.org/">Choco</a>, answering to the specifications of the NRP competition. The parser builds and compounds a multi-weighted automaton from a given set of soft scheduling rules, and then a CP model based on one Multicost-Regular per nurse and one Global Cardinality per period. The model is optimized heuristically through LNS.</span>
 </dd>
 
 <dt><a href="art/menana10rr.pdf" name="RR10">RR 10</a></dt>
@@ -270,7 +270,8 @@ Nurse Rostering Competition at the 8th International Conference for the Practice
 <span class="journal">Lecture Notes in Computer Science</span> (2009) 5547: 178 - 192.
 6th International Conference on Integration of AI and OR Techniques in Constraint Programming for Combinatorial Optimization Problems (<span class="conf">CPAIOR'09</span>), 27-31 may 2009, Pittsburgh, USA.
 <span class="abs">We introduce Multicost-Regular, an extension of the Cost-Regular constraint to handle vectors of costs.
-It is equivalent to an instance of the Resource Constrained Longest/Shortest Path Problem in a layered graph and thus is NP-complete. We present a lagrangian-based filtering algorithm for this constraint.</span>
+  It is equivalent to an instance of the Resource Constrained Longest/Shortest Path Problem in a layered graph and thus is NP-complete. We present a lagrangian-based filtering algorithm for this constraint.</span>
+Preliminary results presented at <span class="conf">ROADEF'09</span> (lagrangian-based filtering). 
 </dd>
 
 <dt><a href="http://hal.archives-ouvertes.fr/hal-00387821" name="jfpc09">JFPC 09</a></dt>
@@ -279,14 +280,6 @@ It is equivalent to an instance of the Resource Constrained Longest/Shortest Pat
 <span class="year">2009</span>
 <span class="title"><a href="http://hal.archives-ouvertes.fr/hal-00387821">Séquencer et compter avec la contrainte multicost-regular</a></span> Proc. p. 125-134.
 5èmes Journées Francophones de Programmation par Contraintes (<span class="conf">JFPC'09</span>), 3-5 june 2009, Orléans, France.
-</dd>
-
-<dt><a href="http://hal.archives-ouvertes.fr/hal-00482943" name="roadef09b">ROADEF 09b</a></dt>
-<dd class="rgb">
-<span class="author">Julien Menana, Sophie Demassey, Narendra Jussien</span>
-<span class="year">2009</span>
-<span class="title"><a href="http://hal.archives-ouvertes.fr/hal-00482943">Relaxation lagrangienne pour le filtrage d'une contrainte-automate à coûts multiples</a></span>
-10ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'09</span>), 11-12 february 2009, Nancy, France.
 </dd>
 
 <dt><a href="http://hal.archives-ouvertes.fr/hal-00293562" name="ct06">Constraints 06</a></dt>
@@ -306,60 +299,35 @@ It is equivalent to an instance of the Resource Constrained Longest/Shortest Pat
 <span class="journal">Lecture Notes in Computer Science</span> (2005) 3524: 140 - 154.
 2nd International Conference on Integration of AI and OR techniques in Constraint Programming for Combinatorial Optimization Problems (<span class="conf">CPAIOR'05</span>), 30 may - 2 june 2005, Prague, Czech Republic.
 <span class="abs">We introduce Cost-Regular, the optimization variant of the Regular constraint. Given a weighted automaton, it enforces a sequence of variables to belong to the regular language specified by the automaton and a cost variable to be equal to the total weight of the sequence. This constraint is used to optimize the subproblem of column generation in the Set Covering ILP model of the Employee Timetabling Problem.</span>
-</dd>
-
-<dt><a class="nolink" name="jopt05">JOPT 05</a></dt>
-<dd class="rgb">
-<span class="author">Sophie Demassey, Gilles Pesant, Louis-Martin Rousseau</span>
-<span class="year">2005</span>
-<span class="title">Constraint programming based column generation for employee timetabling</span>
-Optimization Days (<span class="conf">JOPT'05</span>), 9 - 11 may 2005, Montréal, Canada.
-</dd>
-
-
+Preliminary results presented at <span class="conf">JOPT'05</span>.
 </dl>
+
 <h2 id="rail">column generation for railway infrastructure capacity</h2><dl>
-<dt><a class="nolink" name="phd12">Aurélien's PhD</a></dt>
+<dt><a href="https://www.theses.fr/169906213" name="phd12">Aurélien's PhD</a></dt>
 <dd>
 <span class="author">Aurélien Merel</span>
 <span class="year">2012</span>
-<span class="title"><a class="nolink">Évaluation biobjectif de la capacité d'infrastructures ferroviaires par génération de colonnes hybride</a></span>
+<span class="title"><a href="https://www.theses.fr/169906213">Évaluation biobjectif de la capacité d'infrastructures ferroviaires par génération de colonnes hybride</a></span>
 PhD Thesis in Computer Science, University of Nantes, 31 october 2012.
 </dd>
 
-<dt><a href="http://www.emn.fr/x-info/ppc/bib/pub/merel-al-MIC-2011.pdf" name="mic11">MIC 11</a></dt>
+<dt><a href="art/merel-al-MIC-2011.pdf" name="mic11">MIC 11</a></dt>
 <dd>
 <span class="author">Aurélien Merel, Xavier Gandibleux, Sophie Demassey</span>
 <span class="year">2011</span>
-<span class="title"><a href="http://www.emn.fr/x-info/ppc/bib/pub/merel-al-MIC-2011.pdf">A collaborative combination between column generation and ant colony optimization for solving set packing problems</a></span>
+<span class="title"><a href="art/merel-al-MIC-2011.pdf">A collaborative combination between column generation and ant colony optimization for solving set packing problems</a></span>
 9th Metaheuristics International Conference (<span class="conf">MIC'11</span>), 25-27 july 2011, Udine, Italy.
 <span class="abs">To speed up an ACO procedure on large-size SPP instances, a column generation procedure is applied as a preprocessing step: the search space of the heuristic is restricted to the columns (the subsets) generated so far, and bounded by the optimum of the LP relaxation computed in the same time.</span>
 </dd>
 
-<dt><a class="nolink" name="iaror11">RailRome 11</a></dt>
-<dd class="rgb">
-<span class="author">Aurélien Merel, Xavier Gandibleux, Sophie Demassey</span>
-<span class="year">2011</span>
-<span class="title">Assessing railway infrastructure capacity by solving the saturation problem with an improved column generation algorithm</span>
-IAROR Conference: 4th International Seminar on Railway Operations Modelling and Analysis (<span class="conf">RailRome'11</span>), 16-18 february 2011, Rome, Italy.
-<span class="abs">Long version submitted to Journal of Rail Transport Planning &amp; Management, May 24, 2011.</span>
-</dd>
-
-<dt><a class="http://www.emn.fr/x-info/ppc/bib/pub/merel-al-WCRR-2011.pdf" name="wcrr11">WCRR 11</a></dt>
+<dt><a href="art/merel-al-WCRR-2011.pdf" name="wcrr11">WCRR 11</a></dt>
 <dd>
 <span class="author">Aurélien Merel, Xavier Gandibleux, Sophie Demassey</span>
 <span class="year">2011</span>
-<span class="title"><a href="http://www.emn.fr/x-info/ppc/bib/pub/merel-al-WCRR-2011.pdf">Towards a Realistic Evaluation of Railway Infrastructure Capacity</a></span>
+<span class="title"><a href="art/merel-al-WCRR-2011.pdf">Towards a Realistic Evaluation of Railway Infrastructure Capacity</a></span>
 9th World Congress on Railway Research (<span class="conf">WCRR'11</span>), 22-26 may 2011, Lille, France.
 <span class="abs">We describe our implementation of a CG-ACO algorithm for the railway infrastructure capacity problem in the <a href="http://xgandibleux.free.fr/RECIFE/index.html">RECIFE</a> software.</span>
-</dd>
-
-<dt><a href="http://hal.archives-ouvertes.fr/hal-00466939" name="roadef10">ROADEF 10</a></dt>
-<dd class="rgb">
-<span class="author">Aurélien Merel, Xavier Gandibleux, Sophie Demassey</span>
-<span class="year">2010</span>
-<span class="title"><a href="http://hal.archives-ouvertes.fr/hal-00466939">Un algorithme de génération de colonnes pour le problème de capacité d'infrastructure ferroviaire</a></span>
-11ème congrès de la Société Française de Recherche Opérationnelle et d'Aide à la Décision (<span class="conf">ROADEF'10</span>), 24-26 february 2010, Toulouse, France.
+Preliminary results presented at <span class="conf">ROADEF'10</span> (column generation).
 </dd>
 
 <dt><a href="http://hal.archives-ouvertes.fr/hal-00466933" name="roadef09a">ROADEF 09a</a></dt>
@@ -373,6 +341,15 @@ IAROR Conference: 4th International Seminar on Railway Operations Modelling and 
 
 </dl>
 <h2 id="rcpsp">ILP decompositions and CP for the RCPSP</h2><dl>
+
+<dt><a href="art/demassey03phd.pdf" name="phd03">PhD 03</a></dt>
+<dd>
+<span class="author">Sophie Demassey</span>
+<span class="year">2003</span>
+<span class="title"><a href="art/demassey03phd.pdf">Méthodes hybrides de programmation par contraintes et programmation linéaire pour le problème d'ordonnancement de projet à contraintes de ressources</a></span>
+PhD Thesis in Computer Science - Combinatorial Optimization, University of Avignon, 18 december 2003.<br/>
+download: <a href="art/demassey03phd.pdf">.pdf</a> (french, hyperref, 1.2 MB), <a href="art/demassey03phd.ps.gz">.ps.gz</a> (french, 792 KB)
+</dd>
 
 <dt><a class="nolink" name="iste08">ISTE 08</a></dt>
 <dd>
@@ -405,6 +382,7 @@ chapter in <span class="livre">Perspectives in modern project scheduling,</span>
 <span class="title"><a href="art/demassey05ijc.pdf">Constraint propagation based cutting planes : an application to the resource-constrained project scheduling problem</a></span>
 <span class="journal">INFORMS Journal on Computing</span>(2005) 17 (1) : 52 - 65.
 <span class="abs">We examine various filtering rules for the resource and temporal constraints of the RCPSP and use the result of their propagation to preprocess and to generate several valid linear inequalities for both the continous-time and the time-indexed  MIP models. In our experiments, we observe the capacity of the cuts to improve the lower bounds computed by the LP-relaxations in constructive and destructive (progressive UB rejection) ways.</span>
+Preliminary results presented at <span class="conf">ISMP'00</span>, <span class="conf">FRANCORO'01</span>, <span class="conf">OR'02</span>, <span class="conf">ROADEF'02</span>, <span class="conf">CIRO'02</span>. 
 </dd>
 
 <dt><a href="art/demassey05chapRCPSP.pdf" name="prod05">PIP 05</a></dt>
@@ -442,15 +420,6 @@ see also: <a href="rcpsp/index.html">computational results</a>.
 <span class="abs">We investigate a lagrangian relaxation of Mingozzi's formulation of the RCPSP. The model decomposes in one multiknapsack problem for each time period (to compute a feasible set) and in one project scheduling problem with time-dependent costs but no resource constraints, which amounts to a minimum cut problem solvable in polynomial time.</span>
 </dd>
 
-<dt><a href="art/demassey03phd.pdf" name="phd03">PhD 03</a></dt>
-<dd>
-<span class="author">Sophie Demassey</span>
-<span class="year">2003</span>
-<span class="title"><a href="art/demassey03phd.pdf">Méthodes hybrides de programmation par contraintes et programmation linéaire pour le problème d'ordonnancement de projet à contraintes de ressources</a></span>
-PhD Thesis in Computer Science - Combinatorial Optimization, University of Avignon, 18 december 2003.<br/>
-download: <a href="art/demassey03phd.pdf">.pdf</a> (french, hyperref, 1.2 MB), <a href="art/demassey03phd.ps.gz">.ps.gz</a> (french, 792 KB)
-</dd>
-
 <dt><a href="art/demassey02cpaior.pdf" name="cpaior02">CPAIOR 02</a></dt>
 <dd>
 <span class="author">Sophie Demassey, Christian Artigues, Philippe Michelon</span>
@@ -460,30 +429,6 @@ download: <a href="art/demassey03phd.pdf">.pdf</a> (french, hyperref, 1.2 MB), <
 <span class="abs">Preliminary study for IJOC'05: CP-based valid linear inequalities for the time-indexed MIP formulation of the RCPSP.</span>
 </dd>
 
-<dt><a class="nolink" name="or02">OR 02</a></dt>
-<dd class="rgb">
-<span class="author">Christian Artigues, Sophie Demassey, Philippe Michelon</span>
-<span class="year">2002</span>
-<span class="title">A hybrid constraint propagation-cutting plane algorithm for the RCPSP</span>
-International Conference on Operations Research (<span class="conf">OR'02</span>), 2-5 september 2002, Klagenfurt, Germany.
-</dd>
-
-<dt><a class="nolink" name="roadef02">ROADEF 02</a></dt>
-<dd class="rgb">
-<span class="author">Sophie Demassey, Christian Artigues, Philippe Michelon</span>
-<span class="year">2002</span>
-<span class="title">Bornes inférieures pour le RCPSP : une approche hybride propagation de contraintes - programmation linéaire</span> Proc. p.105-106.
-4ème congrès de la société française de recherche opérationnelle et d'aide à la décision (<span class="conf">ROADEF'02</span>), 20-22 february 2002, Paris, France.
-</dd>
-
-<dt><a class="nolink" name="ciro02">CIRO 02</a></dt>
-<dd class="rgb">
-<span class="author">Philippe Michelon, Sophie Demassey, Christian Artigues</span>
-<span class="year">2002</span>
-<span class="title">Bornes inférieures pour le RCPSP : une approche hybride PPC/PL</span>
-3ème Conférence Internationale de Recherche Opérationnelle (<span class="conf">CIRO'02</span>), 4-6 june 2002, Marrakech, Maroc.
-</dd>
-
 <dt><a href="art/demassey01cosolv.pdf" name="cosolv01">Cosolv 01</a></dt>
 <dd>
 <span class="author">Sophie Demassey, Christian Artigues, Philippe Michelon</span>
@@ -491,22 +436,6 @@ International Conference on Operations Research (<span class="conf">OR'02</span>
 <span class="title"><a href="art/demassey01cosolv.pdf">Comparing lower bounds for the RCPSP under a same hybrid constraint-linear programming approach</a></span> Proc. p. 109-123.
 Workshop on Cooperative Solvers in Constraint Programming (<span class="conf">CoSolv'01</span>), International Conference on Constraint Programming (CP'01), 2001, Paphos, Cyprus.
 <span class="abs">Preliminary study for IJOC'05: first cuts.</span>
-</dd>
-
-<dt><a class="nolink" name="francoro01">FRANCORO 01</a></dt>
-<dd class="rgb">
-<span class="author">Sophie Demassey, Christian Artigues, Philippe Michelon</span>
-<span class="year">2001</span>
-<span class="title">Bornes inférieures pour le problème d'ordonnancement de projet à contraintes de ressources</span>
-3èmes Journées Francophones de Recherche Opérationnelle (<span class="conf">Francoro'01</span>), 9-12 may 2001, Québec, Canada.
-</dd>
-
-<dt><a class="nolink" name="ismp00">ISMP 00</a></dt>
-<dd class="rgb">
-<span class="author">Christian Artigues, Sophie Demassey, Philippe Michelon</span>
-<span class="year">2000</span>
-<span class="title">A linear programming based approach for resource constrained project scheduling</span>
-International Symposium on Mathematical Programming (<span class="conf">ISMP'00</span>), 2000, Atlanta, USA.
 </dd>
 
 <dt><a class="nolink" name="dea00">MSc 00</a></dt>
