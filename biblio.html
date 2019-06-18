@@ -96,12 +96,21 @@
 
 <h2 id="water">MINLP for water distribution systems</h2><dl>
 
-<dt><a href="art/bonvin19inoc.pdf" name="inoc19">INOC 19</a></dt>
+  <dt><a href="art/bonvin19lpnlp.pdf" name="lpnlp">LPNLP</a></dt>
+<dd>
+<span class="author">Gratien Bonvin, Sophie Demassey, Andrea Lodi</span>
+<span class="year">2019</span>
+<span class="title"><a href="art/bonvin19lpnlp.pdf">Pump scheduling in drinking water distribution networks with an LP/NLP-based branch and bound</a></span>
+<span class="abs">Working paper. Preliminary results presented at <a href="ismp18c">ISMP18</a>.</span>
+</dd>
+
+<dt><a href="https://openproceedings.org/2019/conf/inoc/INOC_2019_paper_10.pdf" name="inoc19">INOC 19</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey</span>
 <span class="year">2019</span>
 <span class="title"><a href="art/bonvin19inoc.pdf">Extended linear formulation of the pump scheduling problem in water distribution networks</a></span>
-9th International Network Optimization Conference (<span class="conf">INOC'19</span>), 12-14 june 2019, Avignon.
+<span class="journal">Network Optimization</span> INOC (2019): 13-18. Open Proceedings. [<a href="http://dx.doi.org/10.5441/002/inoc.2019.04">doi</a>]
+9th International Network Optimization Conference, 12-14 june 2019, Avignon.
 <span class="abs">This approximated non-compact LP model of the pump scheduling problem comes from two observations: (1) the time discretization is an artificial assumption which amplifies the problem combinatorial nature, (2) the filling level variation in the water tanks in one hour has a limited impact on the operation of the pumps. Thus, instead of relying on the binary on/off status of the pumps on every time step, our LP model draws on the activation duration of the pump combinations, whose operational characteristics are estimated, in a preprocessing step, approximately by neglecting the tank level variations. Preprocessing is accelerated using network partition and symmetry arguments. A feasible solution (for the theoretical MINLP model) is then searched in the neighborhood of the approximated LP solution, using a combinatorial Benders decomposition approach. The algorithm is made fully generic for networks with uni/bidirectional pipes, fixed/variable-speed pumps, etc.</span>
 </dd>
 
@@ -110,6 +119,7 @@
 <span class="author">Gratien Bonvin, Sophie Demassey, Welington de Oliveira</span>
 <span class="year">2019</span>
 <span class="title"><a href="art/bonvin19wcgo.pdf">Robust design of pumping stations in water distribution networks</a></span>
+<span class="journal">Optimization of Complex Systems: Theory, Models, Algorithms and Applications</span>.  Advances in Intelligent Systems and Computing 991: 957-967. [<a href="https://doi.org/10.1007/978-3-030-21803-4_95">doi</a>]
 6th World Congress on Global Optimization (<span class="conf">WCGO'19</span>), 8-10 july 2019, Metz.
 <span class="abs">We embed the scheduling model of <a href="ae16">AE 16</a> in a stabilized Benders decomposition approach applied to the problem of sizing the pumps in a water distribution network at minimum investment+operation costs. To reduce the complexity of the operational subproblem, we first decompose the scheduling horizon in representative days. We then relax the discrete and non-convex components of the hydraulic model. The resulting QCP relaxation quickly computes accurate enough estimates of the operation costs and allows to derive optimality cuts. We also enforce the robustness of the sizing by evaluating its feasibility on stress-day scenarios (with peak demand and a pump break). We show how to simplify the MIQCP scheduling model when the objective function is ignored and exhibit a dominance argument to derive logic feasibility cuts.</span>
 Preliminary results presented at <span class="conf">ROADEF'17</span>.
