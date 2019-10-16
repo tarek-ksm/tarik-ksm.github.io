@@ -191,6 +191,7 @@ pre {
   overflow: auto;
   overflow-y: hidden;
   margin-bottom: 32px;
+  font-size: larger;
 }
 
 div.new {
