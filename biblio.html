@@ -28,6 +28,7 @@
 <section>
   <h1>thematic bibliography</h1>
   <ul>
+<li><a href="#dco">nonsmooth nonconvex optimization</a> (2019-)</li>
 <li><a href="#dr">scheduling and planning in power systems</a> (2015-)</li>
 <li><a href="#water">MINLP for water distribution systems</a> (2014-)</li>
 <li><a href="#cp">models and algorithms in CP</a> (2010-)</li>
@@ -40,21 +41,32 @@
 <li><a href="#comma">commutative algebra</a> (1997-1998)</dd>
 </ul>
 
+<h2 id="dco">nonsmooth nonconvex optimization</h2><dl>
+<dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7603.html" name="oo20">OO 20</a></dt>
+<dd>
+  <span class="author">Wim van Ackooij, Sophie Demassey, Paul Javal, Hugo Morais, Welington de Oliveira, Bhargav Swaminathan</span>
+  <span class="title"><a href="http://www.optimization-online.org/DB_HTML/2020/02/7603.html">A bundle method for nonsmooth DC programming with application to chance-constrained problems</a></span>
+  working paper (submitted 2020).
+  <span class="abs">Our bundle method addresses nonsmooth nonconvex problems with objective and constraints defined by Difference-of-Convex (aka DC, aka convex-concave) functions. The DC constraints are handled through improvement functions instead of penalization or direct linearization techniques. The method reaches critical points and, under some additional regularity properties, B-stationary points. We also propose a reformulation of probabilistic constraints as DC constraints and assess the method on several classes of deterministic and chance-constrained optimization problems.</span>
+</dd>
+</dl>  
+
 <h2 id="dr">scheduling and planning in power systems</h2><dl>
 
-  <dt><a href="art/ngoran19isgt.pdf" name="isgt19">ISGT 19</a></dt>
+<dt><a href="https://hal-mines-paristech.archives-ouvertes.fr/hal-02318181/document" name="isgt19">ISGT 19</a></dt>
 <dd>
   <span class="author">Arnold N'Goran, Bruno Daugrois, Marc Lotteau, Sophie Demassey</span>
-  <span class="title"><a href="art/ngoran19isgt.pdf">Optimal engagement and operation of a grid-connected PV/battery system</a></span>
+  <span class="title"><a href="https://hal-mines-paristech.archives-ouvertes.fr/hal-02318181/document">Optimal engagement and operation of a grid-connected PV/battery system</a></span>
   2019 IEEE PES Innovative Smart Grid Technologies Europe (<span class="conf">ISGT-Europe'19</span>), Bucharest, Romania.
   <span class="abs">An experimental comparison between a coarse-grained MIQP model solved at optimality with a fine-grained numerical model optimized by a genetic algorithm to control a grid-connected PV/battery system. Our conclusion: seeking for optimality is financially profitable even if it requires to consider loose approximation of the system dynamics to remain fast. The periodic recomputation of the optimal command makes up for the model flaws.</span>
 </dd>
 
-<dt><a href="art/siggini19icae.pdf" name="icae19">ICAE 19</a></dt>
+<dt><a href="https://hal.archives-ouvertes.fr/hal-02318615/document" name="icae19">ICAE 19</a></dt>
 <dd>
   <span class="author">Gildas Siggini, Edi Assoumou, Sophie Demassey</span>
-  <span class="title"><a href="art/siggini19icae.pdf">Investment choices and capacities at risk in decarbonizing the EU electric system</a></span>
-11th International Conference on Applied Energy (<span class="conf">ICAE'19</span>), Västerås, Sweden.
+  <span class="title"><a href="https://hal.archives-ouvertes.fr/hal-02318615/document">Investment choices and capacities at risk in decarbonizing the EU electric system</a></span>
+  11th International Conference on Applied Energy (<span class="conf">ICAE'19</span>), Västerås, Sweden.
+    <span class="abs">In this paper, we analyze the implications of fully or nearly fully decarbonizing the European electric system by 2050 with a new ETSAP TIMES linear programming model.</span>
 </dd>
 
 <dt><a href="https://pid19.sciencesconf.org/data/program/presentation_Paul_Javal.pdf" name="pid19">PID 19</a></dt>
@@ -64,7 +76,6 @@
   PhD and Industry Days 2019 (<span class="conf">PID'19</span>), Saclay, France.
   <span class="abs">An optimal power flow model with side levers to operate a power distribution network with renewable and distributed generators and with flexible loads. We present a simplified DC (difference of convex) model for the stochastic extension.</span>
 </dd>
-
 
 <dt><a name="ismp18a">ISMP 18a</a></dt>
 <dd>
@@ -109,15 +120,17 @@
 28th European Conference on Operational Research (<span class="conf">EURO'16</span>), 3-6 july 2016, Poznan.
 <span class="abs">We extended the bilevel math programming model by P.-L. Poirion (PhD Thesis 2015) for the robust design of a microgrid connected to the public grid by implementing distributed load shedding and network service options.</span>
 </dd>
+</dl>
 
 <h2 id="water">MINLP for water distribution systems</h2><dl>
 
-  <dt><a href="art/bonvin19lpnlp.pdf" name="lpnlp">LPNLP</a></dt>
+  <dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7621.html" name="lpnlp">OO 19</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey, Andrea Lodi</span>
-<span class="year">2019</span>
-<span class="title"><a href="art/bonvin19lpnlp.pdf">Pump scheduling in drinking water distribution networks with an LP/NLP-based branch and bound</a></span>
-<span class="abs">Working paper. Preliminary results presented at <a href="ismp18c">ISMP18</a>.</span>
+<span class="title"><a href="http://www.optimization-online.org/DB_HTML/2020/02/7621.html">Pump scheduling in drinking water distribution networks with an LP/NLP-based branch and bound</a></span>
+working paper (submitted 2018).
+<span class="abs">Our global search scheme for a generic mixed integer nonconvex optimization model of the pump scheduling problem in water distribution networks follows the line of a "logic-based branch-and-benders" approach: we solve a mixed integer convex (OA) relaxation by branch-and-bound, and attempt to enforce the nonconvex hydraulic constraints at each integer node, then raise nogood cuts when infeasible. This solver performed well on different benchmark sets of the literature, being able to compute good lower bounds and solutions with reasonable gap in reasonable time for networks of reasonable size. 
+We also propose to specialize the algorithm on networks with only binary on/off controllable devices (e.g. fixed-speed pumps, gate valves), as the subproblem boils down to a simple flow analysis. However, in this case, feasible solutions of the discretized model are getting scarce as the discretization step is getting large. We thus embed a primal matheuristic that attempts to derive practically feasible solutions from the unfeasible integer (relaxed) solutions computed during branch-and-bound, by slightly adjusting the length of the pumping time windows. Preliminary results presented at <a href="ismp18c">ISMP18</a>.</span>
 </dd>
 
 <dt><a href="https://openproceedings.org/2019/conf/inoc/INOC_2019_paper_10.pdf" name="inoc19">INOC 19</a></dt>
@@ -183,7 +196,15 @@ Presented at <span class="conf">ROADEF'16</span>.
 </dl>
 <h2 id="cp">models and algorithms in CP</h2><dl>
 
-    <dt><a href="art/demassey17hdr.pdf">HDR 2017</a></dt>
+  <dt><a href="art/acpsummer19decomposition.pdf">ACPS 2019</a></dt>
+  <dd>
+<span class="author">Sophie Demassey</span>
+<span class="year">2019</span>
+<span class="title"><a href="art/acpsummer19decomposition.pdf">Decompositions and hybridizations in Constraint Programming</a></span> <a href="https://school.a4cp.org/summer2019/"><strong>ACP Summer School</strong></a>, Vienna July 1-5, 2019. [<a href="art/demassey17hdr-slides.pdf">slides</a>]
+<span class="abs">A short course on how to combine operational research techniques with constraint programming models, endegenously through global constraints, or exogenously with mathematical programming decomposition methods, for solving combinatorial optimization problems, in both efficient and flexible ways.</span>
+</dd>
+  
+<dt><a href="art/demassey17hdr.pdf">HDR 2017</a></dt>
 <dd>
 <span class="author">Sophie Demassey</span>
 <span class="year">2017</span>
@@ -586,7 +607,7 @@ MSc Thesis (Mémoire de DEA) in Pure Mathematics - Commutative Algebra, Universi
 
 </dl>
 
-<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: october 2019</p>
+<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: june 2020</p>
 </section>
 </div>
 </body>
