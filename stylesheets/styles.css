@@ -1,9 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-@import url(http://weloveiconfonts.com/api/?family=typicons);
-@import url(http://weloveiconfonts.com/api/?family=iconicfill);
+@import url(https://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(https://weloveiconfonts.com/api/?family=zocial);
+@import url(https://weloveiconfonts.com/api/?family=typicons);
+@import url(https://weloveiconfonts.com/api/?family=iconicfill);
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/dosis/v18/HhyaU5sn9vOmLzlmC_WoEoZKdbA.woff2) format('woff2');
+}
 
 /* MeyerWeb Reset */
 
@@ -52,7 +59,7 @@ p, ul, ol, table, dl {
 }
 
 h1, h2, h3 {
-	font-family: Dosis, Arvo, Monaco, serif;
+	font-family: 'Dosis', 'Arvo', Monaco, serif;
 	line-height:1.3em;
 	font-weight: normal;
 }
@@ -76,13 +83,13 @@ h3 {
 }
 
 h4, h5, h6 {
-	font-family: Dosis, Arvo, Monaco, serif;
+	font-family: 'Dosis', 'Arvo', Monaco, serif;
 	font-weight: 700;
 }
 
 a {
   color:#C30000;
-  font-weight:200;
+  font-weight:500;
   text-decoration:none;
 }
 
@@ -128,7 +135,7 @@ dl, dt, dd, dl p {
 }
 
 dl dt {
-	font-family: Dosis, 'Arvo', Helvetica, Arial, sans-serif;
+	font-family: 'Dosis', 'Arvo', Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -166,7 +173,7 @@ img.noborder {
 /* Code blocks */
 
 code, pre {
-	font-family: Arvo, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	font-family: 'Arvo', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color:#000;
 }
 
@@ -213,7 +220,7 @@ table {
  }
 
 th {
-	font-family: Dosis, 'Arvo', Helvetica, Arial, sans-serif;
+	font-family: 'Dosis', 'Arvo', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	padding: 10px;
@@ -259,7 +266,7 @@ p.header {
 }
 
 h1.header {
-	font-family: Dosis, Arvo, sans-serif;
+	font-family: 'Dosis', 'Arvo', sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 1.3em;
