@@ -22,7 +22,8 @@
 <li><a class="typicons-forward" href="http://scholar.google.com/citations?user=aLalTi4AAAAJ"><span class="zocial-google"></span> scholar</a></li>
 <li><a class="typicons-forward" href="https://cv.archives-ouvertes.fr/sophie-demassey">hal</a></li></ul>
 
-<a href="http://xkcd.com/664/"><img height="114" width="170" src="images/academia.png" alt="xkcd"/></a>
+<a href="http://xkcd.com/664/"><img height="114" width="170" src="images/academia.png" alt="xkcd"/></a> 
+<!-- a href="http://www.sciencecartoonsplus.com/"><img height="224" width="200" src="images/explicit.png" alt="sharris"/></a -->
 </header>
 
 <section>
@@ -42,12 +43,13 @@
 </ul>
 
 <h2 id="dco">nonsmooth nonconvex optimization</h2><dl>
-<dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7603.html" name="oo20">OO 20</a></dt>
+  <!-- dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7603.html" name="coa20">COA 20</a></dt -->
+<dt><a href="https://rdcu.be/cbe28" name="coa20">COA 20</a></dt>
 <dd>
   <span class="author">Wim van Ackooij, Sophie Demassey, Paul Javal, Hugo Morais, Welington de Oliveira, Bhargav Swaminathan</span>
-  <span class="title"><a href="http://www.optimization-online.org/DB_HTML/2020/02/7603.html">A bundle method for nonsmooth DC programming with application to chance-constrained problems</a></span>
-  working paper (submitted 2020).
-  <span class="abs">Our bundle method addresses nonsmooth nonconvex problems with objective and constraints defined by Difference-of-Convex (aka DC, aka convex-concave) functions. The DC constraints are handled through improvement functions instead of penalization or direct linearization techniques. The method reaches critical points and, under some additional regularity properties, B-stationary points. We also propose a reformulation of probabilistic constraints as DC constraints and assess the method on several classes of deterministic and chance-constrained optimization problems.</span> 
+  <span class="title"><a href="https://rdcu.be/cbe28">A bundle method for nonsmooth DC programming with application to chance-constrained problems</a></span>
+  Computational Optimization and Applications (2020).
+  <span class="abs">We address nonsmooth nonconvex problems with objective and constraints defined by Difference-of-Convex (aka DC, aka convex-concave) functions. The DC constraints are handled through an improvement function instead of penalization or direct linearization techniques. The resulting convexly-constrained DC program is solved with a proximal bundle method, leading to a critical point of the original DC-constrained program and even a B-stationary point under some additional regularity properties. We also propose a reformulation of probabilistic constraints as DC constraints and assess the method on several classes of deterministic and chance-constrained optimization problems.</span> 
 </dd>
 </dl>  
 
@@ -124,11 +126,12 @@
 
 <h2 id="water">MINLP for water distribution systems</h2><dl>
 
-  <dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7621.html" name="lpnlp">OO 19</a></dt>
+  <!-- dt><a href="http://www.optimization-online.org/DB_HTML/2020/02/7621.html" name="lpnlp">OO 19</a></dt -->
+<dt><a href="art/bonvin20opteng.pdf" name="oe20">OE 20</a></dt>
 <dd>
 <span class="author">Gratien Bonvin, Sophie Demassey, Andrea Lodi</span>
-<span class="title"><a href="http://www.optimization-online.org/DB_HTML/2020/02/7621.html">Pump scheduling in drinking water distribution networks with an LP/NLP-based branch and bound</a></span>
-working paper (submitted 2018).
+<span class="title"><a href="art/bonvin20opteng.pdf">Pump scheduling in drinking water distribution networks with an LP/NLP-based branch and bound</a></span>
+Optimization and Engineering (2020).
 <span class="abs">Our global search scheme for a generic mixed integer nonconvex optimization model of the pump scheduling problem in water distribution networks follows the line of a "logic-based branch-and-benders" approach: we solve a mixed integer convex (OA) relaxation by branch-and-bound, and attempt to enforce the nonconvex hydraulic constraints at each integer node, then raise nogood cuts when infeasible. This solver performed well on different benchmark sets of the literature, being able to compute good lower bounds and solutions with reasonable gap in reasonable time for networks of reasonable size. 
 We also propose to specialize the algorithm on networks with only binary on/off controllable devices (e.g. fixed-speed pumps, gate valves), as the subproblem boils down to a simple flow analysis. However, in this case, feasible solutions of the discretized model are getting scarce as the discretization step is getting large. We thus embed a primal matheuristic that attempts to derive practically feasible solutions from the unfeasible integer (relaxed) solutions computed during branch-and-bound, by slightly adjusting the length of the pumping time windows.</span> Preliminary results presented at <span class="conf">ISMP 18</span> and <span class="conf">ROADEF 19</span>.
 </dd>
@@ -615,7 +618,7 @@ MSc Thesis (Mémoire de DEA) in Pure Mathematics - Commutative Algebra, Universi
 
 </dl>
 
-<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: june 2020</p>
+<p class="foot">credits: drawing from <a href="http://xkcd.com/">XKCD</a> - last update: november 2020</p>
 </section>
 </div>
 </body>
