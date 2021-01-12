@@ -1,16 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 @import url(https://weloveiconfonts.com/api/?family=zocial);
 @import url(https://weloveiconfonts.com/api/?family=typicons);
 @import url(https://weloveiconfonts.com/api/?family=iconicfill);
-
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/dosis/v18/HhyaU5sn9vOmLzlmC_WoEoZKdbA.woff2) format('woff2');
-}
 
 /* MeyerWeb Reset */
 
