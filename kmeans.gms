@@ -11,9 +11,12 @@ sets
    i  'data points' /i1*i20/
    xy 'coordinates of points' /x,y/
 ;
+alias (i,j);
+
 parameter
    m(k,xy) 'random clusters to generate data points'
    p(i,*)  'data points'
+   dist(i,i)  'distance point-to-point'
 ;
 
 *------------------------------------------------
@@ -24,10 +27,11 @@ m(k,xy) = uniform(0,4);
 p(i,'cluster') = uniformint(1,card(k));
 p(i,xy) = sum(k$(p(i,'cluster')=ord(k)),m(k,xy)) + uniform(0,1);
 display m,p;
-
+dist(i,j) = sum(xy, sqr(p(i,xy)-p(j,xy)))
+display dist;
 
 *------------------------------------------------
-* Optimization mdel
+* Optimization model
 *------------------------------------------------
 
 variables
@@ -55,16 +59,15 @@ assign(i)..       sum(k, x(i,k)) =e= 1;
 *------------------------------------------------
 
 d.lo(i,k) = 0;
-alias (i,j);
 d.up(i,k) = smax(j, sum(xy, sqr(p(i,xy)-p(j,xy))));
 c.lo(k,xy) = smin(i, p(i,xy));
 c.up(k,xy) = smax(i, p(i,xy));
 
 
 model kmeans /all/;
-;option miqcp=baron;
+option mip=cplex;
 option optcr=0;
-solve kmeans minimizing z using miqcp;
+;solve kmeans minimizing z using mip;
 
 option x:0;
 display c.l,x.l;
